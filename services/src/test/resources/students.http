@@ -1,0 +1,37 @@
+### Get student by id
+GET http://localhost:8080/students/1
+Accept: application/json
+
+### Get all students
+GET http://localhost:8080/students
+Accept: application/json
+
+### Add new student
+POST http://localhost:8080/students
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "genre": {
+    "id": 2,
+    "description": "Male"
+  }
+}
+
+### Delete student
+DELETE http://localhost:8080/students/3
+Accept: application/json
+
+### Update student
+PUT http://localhost:8080/students/2
+Content-Type: application/json
+
+{
+  "firstName": "Jane",
+  "lastName": "Smith",
+  "genre": {
+    "id": 2,
+    "description": "Female"
+  }
+}

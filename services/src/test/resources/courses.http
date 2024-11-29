@@ -1,0 +1,29 @@
+### Get course by id
+GET http://localhost:8080/courses/1
+Accept: application/json
+
+### Get all courses
+GET http://localhost:8080/courses
+Accept: application/json
+
+### Add new course
+POST http://localhost:8080/courses
+Content-Type: application/json
+
+{
+  "name": "Advanced Java",
+  "year": 2024
+}
+
+### Delete course
+DELETE http://localhost:8080/courses/3
+Accept: application/json
+
+### Update course
+PUT http://localhost:8080/courses/2
+Content-Type: application/json
+
+{
+  "name": "Basic Python",
+  "year": 2025
+}

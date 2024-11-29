@@ -11,4 +11,4 @@ plugins {
 }
 
 rootProject.name = "course-management"
-include("app", "domain", "utilities", ":domain-implementations:jdbc", ":domain-implementations:jpa", "services")
+include("app", "domain", "utilities", ":domain-implementations:jdbc", ":domain-implementations:jpa", "services", "clients:console","cryptoutils")
